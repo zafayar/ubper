@@ -1,0 +1,7 @@
+! Google consent, "before you continue"
+www.google.*##^script:has-text(consentCookiePayload)
+www.google.*##+js(acis, document.cookie, YES+)
+google.*##+js(aeld, DOMContentLoaded, CONSENT)
+||consent.google.com^
+||accounts.google.com/gsi/*$xhr,script,3p
+||accounts.google.com/gsi/iframe/select?client_id=*.apps.googleusercontent.com
